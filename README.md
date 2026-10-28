@@ -11,9 +11,9 @@ This project was completed as part of Leep Talent’s Level 3 Cybersecurity Boot
 
 #### PROJECT FILES
 
-##### Network Design:
+##### Network Design: [Download](<Capstone Project Network Design.pkt>)
 
-##### Evidence Sheet:
+##### Evidence Sheet: [View](<Capstone Project Evidence.pdf>)
 
 ---
 
@@ -232,3 +232,14 @@ Configure Hostnames:
 - Connect Client 8 to R1 with Console cable – Test connection.
 - Show the full running configuration of R1.
 - Reload R1 to the login screen asking for password.
+
+---
+
+#### CONCLUSION / REFLECTION
+I created two separate office networks, connected them with a router, and configured each intermediary device and end device with the correct IP addresses, default gateways, subnet masks, and DNS servers according to the project specification. Some devices were assigned static IP addresses and configuration information, while others were dynamically allocated IP addresses and basic configuration information via DHCP pools configured on a DHCP server, with one server for each office.
+
+Devices in the second office all had wired connections, while the main office consisted of devices with a combination of wired and wireless connections. To allow for wireless connectivity in the main office, I configured a wireless router with a unique SSID and WPA2-Personal security. Both the laptops and smartphones used this router to connect to the network without physical connections.
+
+I then configured the email service on a dedicated email server located in the main office. To achieve this, I had to configure the domain specified in the project requirements and create the required email accounts. I then configured those email accounts on their respective hosts (Client 1 and Client 8) to allow those users to exchange emails via the email server. It was important that all these details matched the project specification; otherwise, the email accounts might not function correctly.
+
+Once I finished configuring these devices and services, I began verifying their functionality through ping tests to check whether devices could communicate with one another. I also tested connectivity between the two offices, checked that devices received IP addresses through DHCP, and verified that wireless devices could connect to the network. I tested the email service by sending an email from Client 1 to Client 8 and confirming that it was received successfully.
